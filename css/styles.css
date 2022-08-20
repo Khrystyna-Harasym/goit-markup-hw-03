@@ -355,7 +355,6 @@ ol {
   margin-bottom: 34px;
 }
 
-
 /* =============Список проєктів==============  */
 .project-title {
   font-weight: 700;
@@ -381,8 +380,8 @@ ol {
   flex-direction: column;
   flex-basis: calc((100% - 60px) / 3);
 }
-.project-card{
-  border-top:0;
+.project-card {
+  border-top: 0;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;

@@ -34,6 +34,9 @@
 .menu-link {
   color: inherit;
 }
+.feature-title {
+  font-size: inherit;
+}
 img {
   display: block;
   max-width: 100%;
@@ -91,12 +94,12 @@ ol {
 /* ======================Верхня лінія=================== */
 .top-line {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .top-line-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 /* ====================Логотип========================= */
 .page-logo {
@@ -174,8 +177,10 @@ ol {
 .main-hero-container {
   text-align: center;
 }
-.main-hero,
-.footer-page {
+
+.main-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--accent-background-color);
 }
 .main-title {
@@ -187,7 +192,7 @@ ol {
   color: var(--main-text-color-theme-dark);
 
   width: 696px;
-  padding-top: 200px;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -203,20 +208,30 @@ ol {
   color: var(--main-text-color-theme-dark);
   background: var(--accent-color);
 
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: transparent;
+  border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
 }
 .modal-open-btn:hover,
 .modal-open-btn:focus {
-  background: var(--accent-color);
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .nav-filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-radius: 4px;
+  border: transparent;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
 .nav-filter-btn:hover,
 .nav-filter-btn:focus {
@@ -224,12 +239,11 @@ ol {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: transparent;
   border-radius: 4px;
 }
 /*======================== Особливості====================*/
-.feature-section {
-  background-color: #f5f5f5;
-}
+
 .feature-container {
   display: flex;
 }
@@ -257,7 +271,7 @@ ol {
 /* ==========Чим ми займаємось======== */
 
 .work-section {
-  background-color: #f5f5f5;
+  padding-top: 0;
 }
 .work-list {
   display: flex;
@@ -291,10 +305,7 @@ ol {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-item > .team-name {
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .employee-title {
   font-weight: 500;
   font-size: 16px;
@@ -303,32 +314,35 @@ ol {
 }
 .team-desc {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   color: var(--secondary-text-color-theme-light);
 }
-
+.desc-card {
+  text-align: center;
+}
 /* =====================Підвал======================= */
-
-/* Логотип футера */
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--accent-background-color);
+}
+/*================ Логотип футера================= */
 .footer-page-container {
   display: flex;
   flex-direction: column;
 }
 
 .logo-footer {
-  margin-top: 60px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--light-logo-color);
+  margin-bottom: 20px;
 }
 
-/* Адреса */
-.address-list {
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
+/* ===============Адреса====================== */
+
 .address-item:not(:last-child) {
   padding-bottom: 9px;
 }
@@ -337,7 +351,7 @@ ol {
   line-height: 1.71;
   color: var(--main-text-color-theme-dark);
 }
-/* Стилізація посилань */
+/* ===============Стилізація посилань==================== */
 .footer {
   font-style: normal;
   line-height: 1.71;
@@ -351,8 +365,7 @@ ol {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 /* =============Список проєктів==============  */
@@ -372,8 +385,6 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
-  margin-top: 34px;
 }
 .project-list {
   display: flex;

@@ -295,8 +295,7 @@ ol {
 }
 
 .team-item {
-  display: flex;
-  flex-direction: column;
+
   flex-basis: calc((100% - 90px) / 4);
   background: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
@@ -387,8 +386,7 @@ ol {
   gap: 30px;
 }
 .project-list {
-  display: flex;
-  flex-direction: column;
+  
   flex-basis: calc((100% - 60px) / 3);
 }
 .project-card {
@@ -397,7 +395,8 @@ ol {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.project-list > .project-card {
+
+.project-card {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;

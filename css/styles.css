@@ -118,10 +118,10 @@ ol {
 .page-nav {
   display: flex;
 }
-
-.menu .nav-item:not(:last-child) {
-  margin-right: 50px;
+.menu {
+  column-gap: 50px;
 }
+
 .menu,
 .contact-menu {
   display: flex;
